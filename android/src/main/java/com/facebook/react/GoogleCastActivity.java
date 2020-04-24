@@ -49,6 +49,7 @@ public abstract class GoogleCastActivity extends AppCompatActivity
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setTheme(android.R.style.Theme_Dark);
     mDelegate.onCreate(savedInstanceState);
     // lazy load Google Cast context
     GoogleCastModule.initializeCast(this);
